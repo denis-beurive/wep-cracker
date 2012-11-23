@@ -1,0 +1,2 @@
+rm -rf .//lib/aircrack/__pycache__
+rm -rf .//lib/general/__pycache__
