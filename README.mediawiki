@@ -2,7 +2,7 @@
 
 This script can be used to crack WEP.
 
-=prerequisite=
+=Prerequisite=
 
 * You need Python 3 or greater.
 * You need Aircrack-ng (http://www.aircrack-ng.org/doku.php?id=Main).
@@ -19,18 +19,18 @@ Just edit the file "bin/wep.py", and change the function "launchTerminal(...)". 
 
 =Installation=
 
-There is no special installation required.
+* Move into the directory "bin".
+* Edit the file "wep.py". You must set some variables.
+** WI: The name of your WIFI interface (ex: wlan1).
+** WI_REAL_MAC: The *real* MAC of your WIFI interface.
+** WORKING_DIR: Path to the directory used to save working files.
+** AIRODUMP_PREFIX: Prefix to used with "airodump-ng". You can leave "out".
+** DUMP_DURATION: Duration (in seconds) for the initial scan.
 
 =Use=
 
 * "Source" the file "ENV.SH" (. ENV.SH).
 * Move into the directory "bin".
-* Edit the file "wep.py". You must set some variables.
-** WI: The name of your WIFI interface (ex: wlan1).
-** WI_REAL_MAC: The real MAC of your WIFI interface.
-** WORKING_DIR: Path to the directory used to save working files.
-** AIRODUMP_PREFIX: Prefix to used with "airodump-ng". You can leave "out".
-** DUMP_DURATION: Duration (in seconds) for the initial scan.
 * Run "python wep.py".
 
 
