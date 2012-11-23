@@ -10,9 +10,9 @@ This script can be used to crack WEP.
 * You need to install the Python package "csvsimple" (https://github.com/denis-beurive/csvsimple).
 
 This script *should* be used under the following graphical environment : Lxde (http://lxde.org/).
-But you can also run it without any graphical environment.
+'''But you can also run it without any graphical environment as well.'''
 
-Note that you can adapt the script in order to use another graphical environment (othe that "Lxde").
+Note that you can adapt the script in order to use another graphical environment (other than "Lxde").
 Just edit the file "bin/wep.py", and change the function "launchTerminal(...)". You should adapt the following line:
 
   command = ['lxterminal', '--working-directory=%s' % WORKING_DIR, '-e', " ".join(in_command)]
